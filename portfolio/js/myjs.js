@@ -29,15 +29,3 @@ const observer = new IntersectionObserver(function (entries) {
 });
 
 observer.observe(document.querySelector(".progress-element"));
-
-
-// mobile side menu
-
-function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
-    document.getElementById("mySidepanel").classList.add("DEmmo")
- }
-    
-  function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-  }
