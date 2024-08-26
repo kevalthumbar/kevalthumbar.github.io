@@ -475,7 +475,7 @@ progress {
   border-radius: 10px;
 }
 
-.my-services .heading {
+.heading-left {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -517,6 +517,7 @@ progress {
 
 .features {
   background-color: #e5e5e5;
+  margin-bottom: 30px;
 }
 
 .features .skill-features {
@@ -565,7 +566,6 @@ progress {
 
 .last-part {
   background-color: #e5e5e5;
-  /* margin: 20px; */
   margin: 15px;
 }
 
@@ -579,6 +579,66 @@ progress {
   text-align: center;
   padding: 20px 0;
   border-radius: 10px;
+}
+
+/* contact-form */
+
+.contact-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.contact-form .heading-left {
+  /* padding-block: 15px 10px; */
+
+}
+
+form > label, button {
+  display: block;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  /* outline: 1px solid #000000; */
+}
+
+.form-container form {
+  max-width: 570px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form-container form > input {
+  background-color: #F0F0F6;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 0;
+  padding-inline: 10px;
+}
+
+.form-container form > textarea {
+  background-color: #F0F0F6;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.form-container [type="submit"] {
+  padding: 10px 25px;
+  background: #ffb400;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  margin-right: auto;
+  border: 0;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1014px) {

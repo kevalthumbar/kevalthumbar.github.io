@@ -283,7 +283,7 @@
         <!------my services ------>
         <section class="my-services">
           <div class="services-details">
-            <div class="heading">
+            <div class="heading-left">
               <p>my services</p>
             </div>
             <div class="services-description">
@@ -370,6 +370,35 @@
               <p>Freelanceing Services</p>
               <p>Hire me</p>
             </div>
+          </div>
+        </section>
+        <section class="contact-form">
+          <h2 class="heading-left">Leave us your info</h2>
+          <div class="form-container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+  
+              <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+              <!-- Create your Access key here: https://web3forms.com/ -->
+              <!-- <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE"> -->
+              <input type="hidden" name="access_key" value="d52c0a74-fdc2-4ba4-88d1-9e8585858560">
+          
+              <!-- Custom Form Data: 
+               Then you can include your own form data you wish to receive in email. -->
+              <label for="email">Email:</label>
+              <input id="email-address" placeholder="Enter your email address" type="email" name="email" required>
+  
+              <label for="name">Name:</label>
+              <input id="name" placeholder="Enter you name" type="text" name="First Name" required>
+  
+              <label for="phone">Phone Number:</label>
+              <input id="phone" placeholder="Enter your phone number" type="text" name="Phone Number" required>
+  
+              <label for="message">Message:</label>
+              <textarea id="message" placeholder="Enter your message" name="message" cols="30" rows="10" required></textarea>
+          
+              <button type="submit">Submit Form</button>
+          
+            </form>
           </div>
         </section>
       </section>
