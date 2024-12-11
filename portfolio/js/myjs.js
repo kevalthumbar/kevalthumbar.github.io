@@ -1,31 +1,38 @@
-let list = document.querySelectorAll(".progress-element");
-const observer = new IntersectionObserver(function (entries) {
-    entries.forEach((entry) => {
-        list.forEach((element) => {
-            let tages = element.querySelector("progress");
+// Optimize intersection observer code for languages and skills sections
 
-            if (entry.isIntersecting) {
-                tages.classList.add("loading");
-                return; // if we added the class, exit the function
-            }
-            // We're not intersecting, so remove the class!
-            tages.classList.remove("loading");
-        });
-        // ..............skill update..........\\
-        list.forEach((p_tages) => {
-            let progressTag = p_tages.querySelector("progress");
-            let i = 0;
-            let getProgressLable = p_tages.querySelector(".progress-label");
+const createObserver = (sectionSelector) => {
+    const section = document.querySelector(sectionSelector);
+    const elements = section.querySelectorAll(".progress-element");
 
-            const increment = setInterval(() => {
-                getProgressLable.dataset.value = i + "%";
-                if (i === progressTag.value) {
-                    clearInterval(increment);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            elements.forEach((element) => {
+                const progressTag = element.querySelector("progress");
+
+                const label = element.querySelector(".progress-label");
+                
+                if (entry.isIntersecting) {
+                    progressTag.classList.add("loading");
+
+                    let i = 0;
+                    const increment = setInterval(() => {
+                        label.dataset.value = `${i}%`;
+                        if (i >= progressTag.value) {
+                            clearInterval(increment);
+                        }
+                        i++;
+                    }, 10);
+                    
+                } else {
+                    progressTag.classList.remove("loading");
                 }
-                i++;
-            }, 10);
+            });
         });
     });
-});
 
-observer.observe(document.querySelector(".progress-element"));
+    observer.observe(section);
+};
+
+// Create observers for both languages and skills sections
+createObserver('.languages');
+createObserver('.skill');
