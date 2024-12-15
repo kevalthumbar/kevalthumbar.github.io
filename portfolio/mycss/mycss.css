@@ -172,24 +172,25 @@ body {
 
 progress {
   appearance: none;
+  -moz-appearance: none;
 }
 
 .loading {
   animation: loading 2s ease-in-out;
 }
 
-::-webkit-progress-value {
+progress::-webkit-progress-value {
+  -webkit-appearance: none;
   background-color: #ffb400;
   border-radius: 10px;
-  height: 4px;
 }
 
-::-webkit-progress-bar {
+progress::-webkit-progress-bar {
+  -webkit-appearance: none;
   background-color: rgba(0, 0, 0, 0.1);
   border: 0.5px solid #ffb400;
   border-radius: 10px;
   height: 6px;
-  padding: 1px;
 }
 
 @keyframes loading {
