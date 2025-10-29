@@ -7,51 +7,60 @@
   font-family: "Inter";
 }
 
+html {
+  font-size: 62.5%; /* or 10px */
+}
+
 body {
   background-color: #e5e5e5;
+  max-width: 147.2rem;
+  margin: 0 auto;
+}
+
+body  p , body  b, label {
+  font-size: 1.5rem;
 }
 
 .container {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .mobile-header {
- margin: 15px; 
+  margin: 1.5rem;
 }
 
 .mobile-nav-contain {
   display: flex;
   align-items: center;
-  padding: 12px 24px 12px 12px;
+  padding: 1.2rem 2.4rem 1.2rem 1.2rem;
   background-color: #ffffff;
-  border-radius: 80px;
-  
+  border-radius: 8rem;
 }
 
-.mobile-nav-contain  button{
+.mobile-nav-contain button {
   background-color: #ffffff;
   border: 0;
   cursor: pointer;
 }
 
 .left-side {
-  padding: 40px;
+  padding: 4rem;
   background-color: #ffffff;
-  margin: 15px 0 15px 15px;
-  border-radius: 10px;
+  margin: 1.5rem 0 1.5rem 1.5rem;
+  border-radius: 1rem;
 }
 
 .profile {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .left-side .basic-details .name {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 123.6%;
   text-transform: capitalize;
   color: #2b2b2b;
@@ -61,12 +70,12 @@ body {
 .left-side .basic-details .skill-name {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
   color: #767676;
-  margin: 15px 0;
+  margin: 1.5rem 0;
   text-align: center;
 }
 
@@ -75,22 +84,22 @@ body {
 .social-media-heading {
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1.7rem;
   line-height: 123.6%;
   text-transform: capitalize;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .social-media a {
-  transition: all .2s ease-in-out
+  transition: all 0.2s ease-in-out;
 }
 
 .social-media a:hover {
@@ -98,23 +107,23 @@ body {
 }
 
 .division {
-  margin: 25px 0;
+  margin: 2.5rem 0;
 }
 
 /* detailes */
 .detailes {
   display: flex;
   flex-wrap: nowrap;
-  gap: 40px;
+  gap: 4rem;
 }
 
 .detailes p {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
   text-transform: capitalize;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .detailes .fileds-name p {
@@ -122,11 +131,11 @@ body {
 }
 
 .detailes .fileds-name p:nth-child(1) {
-  width: 45%;
+  width: 4.5rem;
 }
 
 .detailes .fileds-name p:nth-child(2) {
-  width: 85%;
+  width: 8.5rem;
 }
 
 /*..... Languages..... */
@@ -134,15 +143,16 @@ body {
 .heading {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 123.6%;
   text-transform: capitalize;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .progress-label {
   position: relative;
+  font-size: 1.5rem;
 }
 
 .gujarati::before {
@@ -182,15 +192,15 @@ progress {
 progress::-webkit-progress-value {
   -webkit-appearance: none;
   background-color: #ffb400;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 progress::-webkit-progress-bar {
   -webkit-appearance: none;
   background-color: rgba(0, 0, 0, 0.1);
-  border: 0.5px solid #ffb400;
-  border-radius: 10px;
-  height: 6px;
+  border: 0.05rem solid #ffb400;
+  border-radius: 1rem;
+  height: 0.6rem;
 }
 
 @keyframes loading {
@@ -238,12 +248,16 @@ progress::-webkit-progress-bar {
 .extra-skills-details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .skills-name {
   display: flex;
-  gap: 15px;
+  gap: 1.5rem;
+}
+
+.skills-name p {
+  font-size: 1.5rem;
 }
 
 /*..... resume-download..... */
@@ -252,18 +266,18 @@ progress::-webkit-progress-bar {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding: 10px 0;
+  gap: 1rem;
+  padding: 1rem 0;
   background: #ffb400;
   width: 100%;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   text-transform: capitalize;
   color: #2b2b2b;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .desktop-mobile {
@@ -273,27 +287,27 @@ progress::-webkit-progress-bar {
 /*............................Right section.............................. */
 
 .rigth-side {
-  margin: 15px 15px 15px 0;
+  margin: 1.5rem 1.5rem 1.5rem 0;
 }
 
 .hero-banner {
   background-color: #ffffff;
   position: relative;
-  padding: 20px 40px;
-  border-radius: 10px;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
 }
 
 .wrapper span {
   position: absolute;
-  bottom: -10px;
+  bottom: -1rem;
   animation: animate 10s linear infinite;
-  font-size: 60px;
+  font-size: 6rem;
   z-index: 1;
   opacity: 0;
 }
 
 .wrapper span:nth-child(1) {
-  left: 10px;
+  left: 1rem;
   animation-delay: 0.6s;
 }
 
@@ -345,7 +359,7 @@ progress::-webkit-progress-bar {
 .banner {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
   align-items: center;
   z-index: 1;
 }
@@ -365,7 +379,7 @@ progress::-webkit-progress-bar {
   }
 
   100% {
-    transform: translateY(-800px) rotate(360deg);
+    transform: translateY(-80rem) rotate(360deg);
     opacity: 0;
   }
 }
@@ -373,8 +387,8 @@ progress::-webkit-progress-bar {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%; 
+  gap: 2rem;
+  width: 100%;
 }
 
 .banner .photos img {
@@ -385,7 +399,7 @@ progress::-webkit-progress-bar {
 .content .name {
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 123.6%;
   color: #2b2b2b;
 }
@@ -397,8 +411,8 @@ progress::-webkit-progress-bar {
 .content .details {
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
   color: #474747;
@@ -411,12 +425,12 @@ progress::-webkit-progress-bar {
   width: max-content;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 16px 32px;
-  gap: 10px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  padding: 1.6rem 3.2rem;
+  gap: 1rem;
   background-color: #ffb400;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   text-decoration: none;
   color: #2b2b2b;
   animation: shake 0.6s;
@@ -425,47 +439,47 @@ progress::-webkit-progress-bar {
 
 @keyframes shake {
   0% {
-    transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(0.1rem, 0.1rem) rotate(0deg);
   }
 
   10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-0.1rem, -0.2rem) rotate(-0.1deg);
   }
 
   20% {
-    transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-0.3rem, 0rem) rotate(0.1deg);
   }
 
   30% {
-    transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(0.3rem, 0.2rem) rotate(0deg);
   }
 
   40% {
-    transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(0.1rem, -0.1rem) rotate(0.1deg);
   }
 
   50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-0.1rem, 0.2rem) rotate(-0.1deg);
   }
 
   60% {
-    transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-0.3rem, 0.1rem) rotate(0deg);
   }
 
   70% {
-    transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(0.3rem, 0.1rem) rotate(-0.1deg);
   }
 
   80% {
-    transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-0.1rem, -0.1rem) rotate(0.1deg);
   }
 
   90% {
-    transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(0.1rem, 0.2rem) rotate(0deg);
   }
 
   100% {
-    transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(0.1rem, -0.2rem) rotate(-0.1deg);
   }
 }
 
@@ -473,14 +487,14 @@ progress::-webkit-progress-bar {
 
 .my-services {
   background-color: #ffffff;
-  margin: 30px 0px;
-  border-radius: 10px;
+  margin: 3rem 0;
+  border-radius: 1rem;
 }
 
-.heading-left {
+.heading-left p{
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 123.6%;
   text-transform: capitalize;
   color: #2b2b2b;
@@ -491,64 +505,58 @@ progress::-webkit-progress-bar {
   list-style-type: none;
 }
 
-
 .services-details {
-  padding: 40px 45px;
+  padding: 4rem 4.5rem;
 }
 
 .services-description ul > li:not(:last-child) {
-  margin-bottom: 10px;
-  
+  margin-bottom: 1rem;
 }
 
 .services-description ul > li > b {
- color: #ffb400;
-
+  color: #ffb400;
 }
 
 .services-description ul > li > p {
-  margin-top: 10px ;
- 
- }
+  margin-top: 1rem;
+}
 
- .services-description ul > li > p::before {
+.services-description ul > li > p::before {
   content: "--> ";
- }
-
-
+}
 
 .features {
   background-color: #e5e5e5;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .features .skill-features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .features .box1 {
-  padding: 28px 55px 42px 55px;
+  padding: 2.8rem 5.5rem 4.2rem 5.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1 1 0px;
+  flex: 1 1 0;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .features .box1 .svg1 {
-  margin-bottom: 26px;
+  margin-bottom: 2.6rem;
 }
 
 .features .box1 p:nth-last-child(2) {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 123.6%;
   text-align: center;
   text-transform: capitalize;
@@ -558,8 +566,8 @@ progress::-webkit-progress-bar {
 .features .box1 p:nth-last-child(1) {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
   text-align: center;
   text-transform: capitalize;
   font-feature-settings: "calt" off, "kern" off;
@@ -568,32 +576,33 @@ progress::-webkit-progress-bar {
 
 .last-part {
   background-color: #e5e5e5;
-  margin: 15px;
+  margin: 1.5rem;
 }
 
 .last-part .notice {
   background-color: #ffffff;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5rem;
   text-transform: capitalize;
   color: #767676;
   text-align: center;
-  padding: 20px 0;
-  border-radius: 10px;
+  padding: 2rem 0;
+  border-radius: 1rem;
 }
 
 /* contact-form */
 
 .contact-form {
   background-color: #ffffff;
-  border-radius: 10px;
-  padding: 25px;
+  border-radius: 1rem;
+  padding: 2.5rem;
 }
 
 .contact-form .heading-left {
-  /* padding-block: 15px 10px; */
-
+  padding-block: 1.5rem 1rem;
+  font-size: 3.2rem;
+  text-align: center;
 }
 
 form > label, button {
@@ -607,7 +616,7 @@ form > label, button {
 }
 
 .form-container form {
-  max-width: 570px;
+  max-width: 57rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -616,37 +625,37 @@ form > label, button {
 
 .form-container form > input {
   background-color: #F0F0F6;
-  height: 50px;
-  margin-bottom: 10px;
+  height: 5rem;
+  margin-bottom: 1rem;
   border: 0;
-  padding-inline: 10px;
+  padding-inline: 1rem;
 }
 
 .form-container form > textarea {
   background-color: #F0F0F6;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .form-container [type="submit"] {
-  padding: 10px 25px;
+  padding: 1rem 2.5rem;
   background: #ffb400;
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   text-transform: uppercase;
   color: #2b2b2b;
   margin-right: auto;
   border: 0;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
-@media only screen and (max-width: 1014px) {
+@media only screen and (max-width: 960px) {
   .container {
-    gap: 15px;
+    gap: 1.5rem;
   }
 
   .photos {
@@ -654,30 +663,30 @@ form > label, button {
   }
 
   .left-side {
-    padding: 20px; 
+    padding: 2rem;
   }
-  
+
   .desktop-mobile {
     display: block;
   }
 }
 
 @media only screen and (max-width: 768px) {
-.container {
+  .container {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
 
   .hero-banner {
-    padding: 40px 20px;
+    padding: 4rem 2rem;
   }
 
   .services-details {
-    padding: 40px 20px;
-   }
-  
+    padding: 4rem 2rem;
+  }
+
   .rigth-side {
-    margin: 15px;
+    margin: 1.5rem;
   }
 
   .photos {
@@ -685,12 +694,12 @@ form > label, button {
   }
 
   .left-side {
-    padding: 25px;
-    margin: 15px;
+    padding: 2.5rem;
+    margin: 1.5rem;
   }
 
   .content .name {
-    font-size: 40px;
+    font-size: 4rem;
   }
 }
 
@@ -704,11 +713,11 @@ form > label, button {
   }
 
   .hero-banner {
-    padding: 20px;
+    padding: 2rem;
   }
 
   .content .name {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .banner .photos img {
