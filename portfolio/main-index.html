@@ -403,8 +403,11 @@
     </section>
     <footer class="last-part desktop">
       <p class="notice">
-        This website is made by me. No used any type of template.
+        © <span id="currentYear"></span> All Rights Reserved | Designed and Developed by <span class="highlighted-text">Keval Thumbar.</span>
       </p>
+      <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+      </script>
     </footer>
   </main>
   <script src="./js/myjs.js"></script>
