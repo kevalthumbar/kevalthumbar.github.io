@@ -1,6 +1,6 @@
 (function () {
   const CONFIG = {
-    clickVolume: 0.3,
+    clickVolume: 1.0,
     clickSoundPath: "./Portfolio/Sound/click-sound.mp3",
   };
 
