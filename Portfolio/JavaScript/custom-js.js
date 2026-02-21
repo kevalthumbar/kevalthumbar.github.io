@@ -115,24 +115,20 @@ function typeWriter() {
   if (!typingElement) return;
 
   if (!isDeleting && charIndex <= textToType.length) {
-    // Typing
     typingElement.textContent = textToType.substring(0, charIndex);
     charIndex++;
     
     if (charIndex > textToType.length) {
-       // Finished typing, pause then switch to deleting
        isDeleting = true;
        setTimeout(typeWriter, pauseTime);
     } else {
        setTimeout(typeWriter, typingSpeed);
     }
   } else if (isDeleting && charIndex >= 0) {
-    // Deleting
     typingElement.textContent = textToType.substring(0, charIndex);
     charIndex--;
     
     if (charIndex < 0) {
-        // Finished deleting, pause then switch to typing
         isDeleting = false;
         charIndex = 0;
         setTimeout(typeWriter, loopDelay);
@@ -142,8 +138,6 @@ function typeWriter() {
   }
 }
 
-// Start typing when page loads
 window.addEventListener("DOMContentLoaded", () => {
-    // Small delay before starting
     setTimeout(typeWriter, 500);
 });
