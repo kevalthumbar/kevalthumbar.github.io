@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://kevalthumbar.github.io/sitemap.xml
