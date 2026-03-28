@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     welcomeScreen.classList.add("fade-out");
-  }, 2500);
+  }, 1000);
 });
 
 // Mobile Menu Toggle

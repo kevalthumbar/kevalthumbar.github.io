@@ -326,7 +326,7 @@ nav {
   position: absolute;
   font-size: 8rem;
   color: var(--accent);
-  opacity: 0.15; 
+  opacity: 0.45; 
   animation: float 6s ease-in-out infinite;
   line-height: 1;
   will-change: transform;
@@ -334,8 +334,8 @@ nav {
 
 .hero-icon:nth-child(even) {
   font-size: 6rem;
-  color: var(--primary);
-  opacity: 0.1;
+  color: var(--accent);
+  opacity: 0.40;
 }
 
 @keyframes float {
