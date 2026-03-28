@@ -1206,7 +1206,7 @@ footer {
   }
 
   /* Resize floating icons on mobile */
-  .hero-icon { font-size: 4rem; opacity: 0.1; }
+  .hero-icon { font-size: 4rem; opacity: 0.40; }
   .hero-icon:nth-child(even) { font-size: 3rem; }
 
   .contact-info-bar { flex-direction: column; align-items: stretch; gap: 1rem; }
