@@ -1,0 +1,29 @@
+# Keval Thumbar — Shopify Developer (Ahmedabad)
+
+> Personal portfolio of Keval Thumbar, a Shopify Frontend Developer based in Ahmedabad, Gujarat, India. Services include custom Shopify 2.0 theme development, store setup and migration, Core Web Vitals optimization, and ongoing bug fixing and support.
+
+## Primary entity
+- Name: Keval Thumbar
+- Role: Shopify Frontend Developer
+- Location: Ahmedabad, Gujarat, India
+- Years of experience: 2+
+- Email: kevalthumbar061@gmail.com
+- Phone: +91 91066 15542
+- Portfolio: https://kevalthumbar.github.io/
+- LinkedIn: https://www.linkedin.com/in/keval-thumbar-461aab239
+- GitHub: https://github.com/kevalthumbar
+
+## Services
+- Custom Shopify 2.0 theme development (Liquid, JSON templates)
+- Shopify store setup and migration
+- Shopify speed and Core Web Vitals optimization
+- Shopify bug fixing and ongoing support
+
+## Featured projects
+- Bait Brigade — https://baitbrigade.com/en
+- VitalFirst — https://vitalfirst.co.in
+- Aladdin Dates — https://aladdindates.com
+- SportDrip — https://sportdrip.in
+
+User-agent: *
+Allow: /
