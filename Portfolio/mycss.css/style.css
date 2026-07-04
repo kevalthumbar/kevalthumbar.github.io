@@ -893,6 +893,59 @@ section {
   transform: rotate(180deg);
 }
 
+/* Experience Read More / Collapsible Past Jobs */
+.experience-toggle-wrapper {
+  text-align: center;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.experience-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: var(--white);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1.2rem 2.8rem;
+  border-radius: 50px;
+  font-family: inherit;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(100, 148, 62, 0.15);
+}
+
+.experience-toggle-btn:hover {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 6px 20px rgba(100, 148, 62, 0.3);
+  transform: translateY(-2px);
+}
+
+.experience-toggle-btn i {
+  transition: transform 0.4s ease;
+  font-size: 1.3rem;
+}
+
+.experience-toggle-btn.active i {
+  transform: rotate(180deg);
+}
+
+.experience-hidden-jobs {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease-out, opacity 0.4s ease-out;
+}
+
+.experience-hidden-jobs.active {
+  max-height: 2000px;
+  opacity: 1;
+  transition: max-height 0.6s ease-in, opacity 0.4s ease-in;
+}
+
 /* Project Footer & Visit Button */
 .project-footer {
   margin-top: auto;

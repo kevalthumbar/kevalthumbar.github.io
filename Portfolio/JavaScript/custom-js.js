@@ -100,6 +100,24 @@ readMoreBtns.forEach((btn) => {
   });
 });
 
+// Experience Section Read More Toggle
+const experienceToggleBtn = document.getElementById("experienceToggleBtn");
+const experienceHiddenJobs = document.getElementById("experienceHiddenJobs");
+
+if (experienceToggleBtn && experienceHiddenJobs) {
+  experienceToggleBtn.addEventListener("click", () => {
+    experienceHiddenJobs.classList.toggle("active");
+    experienceToggleBtn.classList.toggle("active");
+
+    const btnText = experienceToggleBtn.querySelector("span");
+    if (experienceHiddenJobs.classList.contains("active")) {
+      btnText.textContent = "Hide Past Experience";
+    } else {
+      btnText.textContent = "View Past Experience";
+    }
+  });
+}
+
 // Typing Animation Logic
 const typingElement = document.getElementById("hero-typing");
 const textToType = "Shopify Developer";
