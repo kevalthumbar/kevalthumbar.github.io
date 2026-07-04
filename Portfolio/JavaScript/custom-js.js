@@ -121,10 +121,10 @@ if (experienceToggleBtn && experienceHiddenJobs) {
 // Typing Animation Logic
 const typingElement = document.getElementById("hero-typing");
 const textToType = "Shopify Developer";
-const typingSpeed = 100; // ms per char
-const deletingSpeed = 50; // ms per char
-const pauseTime = 2000; // Pause after typing
-const loopDelay = 500; // Pause before starting next loop
+const typingSpeed = 100; 
+const deletingSpeed = 50;
+const pauseTime = 2000;
+const loopDelay = 500;
 
 let charIndex = 0;
 let isDeleting = false;
@@ -174,3 +174,36 @@ window.addEventListener("scroll", () => {
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// Theme Toggle Logic
+const themeToggleBtn = document.getElementById("themeToggle");
+if (themeToggleBtn) {
+  const themeIcon = themeToggleBtn.querySelector("i");
+
+  const updateToggleIcon = (isDark) => {
+    if (isDark) {
+      themeIcon.classList.remove("fa-moon");
+      themeIcon.classList.add("fa-sun");
+    } else {
+      themeIcon.classList.remove("fa-sun");
+      themeIcon.classList.add("fa-moon");
+    }
+  };
+
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  updateToggleIcon(currentTheme === "dark");
+
+  themeToggleBtn.addEventListener("click", () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      document.documentElement.removeAttribute("data-theme");
+      localStorage.setItem("theme", "light");
+      updateToggleIcon(false);
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      updateToggleIcon(true);
+    }
+  });
+}
+
