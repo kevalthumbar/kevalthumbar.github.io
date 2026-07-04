@@ -1282,3 +1282,49 @@ footer {
   
   .contact-form { padding: 3rem 2rem; }
 }
+
+/* --- Back to Top Button --- */
+.back-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(100, 148, 62, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(100, 148, 62, 0.5);
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 2rem;
+    right: 2rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.6rem;
+  }
+}
