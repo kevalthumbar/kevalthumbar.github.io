@@ -81,6 +81,38 @@ const revealOnScroll = () => {
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
+// Active State in Nav Bar on Scroll
+const navMenuLinks = document.querySelectorAll(".nav-links a");
+const sections = Array.from(navMenuLinks).map(link => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+
+const activeNavOnScroll = () => {
+  let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  const headerOffset = 160; 
+  let currentSection = null;
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (scrollPosition >= sectionTop - headerOffset) {
+      currentSection = section;
+    }
+  });
+
+  // If at the very bottom of the page, activate the last section
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 20) {
+    currentSection = sections[sections.length - 1];
+  }
+
+  navMenuLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (currentSection && link.getAttribute("href") === `#${currentSection.id}`) {
+      link.classList.add("active");
+    }
+  });
+};
+
+window.addEventListener("scroll", activeNavOnScroll);
+window.addEventListener("DOMContentLoaded", activeNavOnScroll);
+
 // Read More Toggle Logic
 const readMoreBtns = document.querySelectorAll(".read-more-btn");
 
