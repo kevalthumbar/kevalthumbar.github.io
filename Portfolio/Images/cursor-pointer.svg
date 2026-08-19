@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+  <g filter="url(#shadow)">
+    <path d="M10 2C9.45 2 9 2.45 9 3V13.2L7.6 11.8C6.8 11 5.5 11 4.7 11.8C3.9 12.6 3.9 13.9 4.7 14.7L9.8 20.8C10.9 22.1 12.5 22.9 14.2 22.9H18.5C20.4 22.9 22 21.3 22 19.4V12.8C22 11.7 21.1 10.8 20 10.8C19.7 10.8 19.5 10.9 19.3 11C19 10.1 18.1 9.4 17 9.4C16.7 9.4 16.5 9.5 16.3 9.6C16 8.7 15.1 8 14 8C13.8 8 13.5 8.1 13.3 8.2V3C13.3 2.45 12.85 2 12.3 2H10Z" fill="#64943E" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <filter id="shadow" x="0" y="0" width="28" height="28" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0.8" dy="1.5" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+</svg>
