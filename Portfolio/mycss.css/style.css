@@ -1532,3 +1532,7 @@ footer {
     font-size: 1.6rem;
   }
 }
+
+.sk_branding{
+  display: none !important;
+}
